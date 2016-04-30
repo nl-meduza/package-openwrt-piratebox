@@ -41,7 +41,7 @@ define Package/piratebox/postinst
 	# disable web interface, start PirateBox instead
 	# Only disable if installed!
 	if [ -e /etc/init.d/uhttpd ] ; then 
-	   echo "Stopping uttpd and disable it"
+	   echo "Stopping uhttpd and disable it"
 	   /etc/init.d/uhttpd stop
 	   /etc/init.d/uhttpd disable
 	fi
